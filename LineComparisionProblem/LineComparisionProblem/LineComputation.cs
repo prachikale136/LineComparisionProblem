@@ -52,6 +52,15 @@ namespace LineComparisionProblem
             double LengthOfSR = Math.Sqrt(Math.Pow((S_Two - S_One), 2) + Math.Pow((R_Two - R_One), 2));
             Console.WriteLine("Length of Value 2 is: " + LengthOfSR);
         }
+        public void CheckEqualLines()
+        {
+            bool equalToResult = LengthOfXY.Equals(LengthOfSR);
+            if (equalToResult == false)
+                Console.WriteLine("Therefore, Lines LengthOfXY and LengthOfSR are NOT Equal.");
+            else
+                Console.WriteLine("Therefore, Lines LengthOfXY and LengthOfSR are Equal.");
+            Console.ReadKey();
+        }
     }
         
 
